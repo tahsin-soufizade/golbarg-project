@@ -1,0 +1,199 @@
+/* MAIN HEADER IMAGE */
+.main-header-container {
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#f3ffff, #f3ffff, #fff);
+}
+
+/* IMAGE */
+.main-header-container .main-header-image {
+    margin-top: 3.2rem;
+}
+
+.main-header-container .main-header-image .main-header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-header-container .main-header-image .main-header-overly {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+/* MAIN HEADER TEXT */
+.main-header-container .main-header-text {
+    text-align: center;
+}
+
+/* TITLE */
+.main-header-container .main-header-text .main-header-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* SLOGAN */
+.main-header-container .main-header-text .main-header-slogan {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 992px) {
+    /* show overly */
+    .main-header-container .main-header-image .main-header-overly {
+        display: block;
+    }
+
+    /* set absolute position to text info */
+    .main-header-container .main-header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--text-white);
+        width: 95%;
+        text-shadow: 3px 3px 12px #fff;
+    }
+
+    /* change slogan color */
+    .main-header-container .main-header-text .main-header-slogan {
+        color: var(--text-white);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header-container .main-header-text .main-header-title {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .main-header-container .main-header-image {
+        height: 70.5vh;
+    }
+
+    .main-header-container .main-header-text {
+        top: 55%;
+    }
+
+    .main-header-container .main-header-text .main-header-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .main-header-container .main-header-text {
+        top: 60%;
+    }
+
+    .main-header-container .main-header-text .main-header-slogan {
+        font-size: 1.1rem;
+    }
+}
+
+/* GUARANTEE PART */
+
+.guarantee-container {
+    margin-top: 4rem;
+}
+
+.guarantee-container .guarantee-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.guarantee-container .guarantee-item .guarantee-image-wrapper {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.guarantee-container .guarantee-item .guarantee-text {
+    margin-top: 1rem;
+    font-family: var(--font-iransans);
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .guarantee-container {
+        margin-top: 3rem;
+    }
+
+    .guarantee-container .guarantee-item .guarantee-text {
+        font-size: 1.5rem;
+    }
+
+    .guarantee-container .guarantee-item .guarantee-image-wrapper {
+        width: 18%;
+    }
+}
+
+
+/* CAROUSEL STYLE */
+
+.carousel-category-container {
+    margin-top: 2rem;
+}
+
+.carousel-category-container .carousel-control-prev, .carousel-control-next {
+    background: transparent;
+    border: none;
+    opacity: 1;
+    width: 10%;
+}
+
+.carousel-category-container #carouselExampleInterval {
+    padding: 0 !important;
+    overflow: hidden !Important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* BUTTON TO GO TOP PAGE */
+.go-top-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    font-size: 1.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    position: fixed;
+    bottom: -50%;
+    left: 2rem;
+    animation: go-top-anim 2s infinite;
+    transition: all .5s;
+    outline: none;
+    box-shadow: 0 0 2px 1px var(--text-white) !important;
+}
+
+.go-top-btn:hover {
+    animation-play-state: paused;
+    background: var(--secondary-900);
+}
+
+@keyframes go-top-anim {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+/* show go top button */
+.go-top-btn.show-go-top-btn{
+    bottom: 2rem;
+}

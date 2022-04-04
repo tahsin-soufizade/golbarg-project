@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1B1464;
+    --secondary-color: #12CBC4;
+    --secondary-900: #23c2bf;
+    /* FONTS */
+    --font-sahel: font-sahel;
+    --font-iransans: font-iransans;
+    /* COLOR */
+    --text-white: #fff;
+    --text-dark: #000;
+    --text-danger: #e81505;
+    --text-success: #1cb256;
+    --text-success-900: #148c41;
+    /* GRAY*/
+    --gray-900: #797979;
+    --gray-500: #a4a4a4;
+    --gray-100: #d9d9d9;
+}
+
+body {
+    background: #f3ffff;
+    font-family: var(--font-sahel);
+    direction: rtl;
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+@font-face {
+    font-family: font-sahel;
+    src: url('./fonts/Sahel.ttf');
+}
+
+@font-face {
+    font-family: font-iransans;
+    src: url('./fonts/iransans.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: auto;
+    box-shadow: none !important;
+}
+
+input {
+    outline: none;
+}
+
+.seprator-line {
+    width: 400px;
+    display: block;
+    margin: 2rem auto;
+}
+
+@media screen and (max-width: 992px) {
+    .seprator-line {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .seprator-line {
+        width: 250px;
+    }
+}

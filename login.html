@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به فروشگاه گلبرگ</title>
+    <link rel="stylesheet" href="./plugins/bootstrap-5/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all-fonts.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/same-components.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<!--HEADER-->
+<header>
+    <!-- CATEGORY-->
+    <div class="category-wrapper">
+        <button class="btn menu-burger-btn"><i class="fa fa-bars"></i></button>
+        <nav>
+            <div class="category-list">
+
+                <ul class="category-mobile-list">
+                    <li class="category-item"><a href="./index.html" class="category-link">صفحه اصلی</a></li>
+                    <li class="category-item"><a class="category-link">زنانه<i class="fa fa-angle-down"></i></a>
+                        <ul class="inner-category-list">
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">زنانه ۱</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">زنانه ۲</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">زنانه ۳</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">زنانه ۴</a></li>
+                        </ul>
+                    </li>
+                    <li class="category-item"><a class="category-link">مردانه<i class="fa fa-angle-down"></i></a>
+                        <ul class="inner-category-list">
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">مردانه ۱</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">مردانه ۲</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">مردانه ۳</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">مردانه ۴</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="category-item"><a class="category-link">بچگانه<i class="fa fa-angle-down"></i></a>
+                        <ul class="inner-category-list">
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">بچگانه ۱</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">بچگانه ۲</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">بچگانه ۳</a></li>
+                            <li class="inner-category-item"><a href="#" class="inner-category-link">بچگانه ۴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <li class="category-item">
+                    <a href='./contact-us.html' class="category-link"> <i class="fa fa-phone"></i>تماس با ما </a>
+                </li>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row form-row">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <div class="login-container">
+                <p class="form-title">ورود</p>
+                <!-- AVATAR -->
+                <div class="avatar-wrapper">
+                    <img src="./images/user-avatar.png" alt="user avatar">
+                </div>
+                <!-- ALERT MESSAGE -->
+                <div class="alert-container">
+                    <p class="alert-text mb-0"></p>
+                </div>
+                <form action="#" class="form-container">
+                    <div class="input-group form-input-group">
+                        <input type="text" placeholder="شماره موبایل" data-type="phone" class="form-input phoneInput"
+                               autocomplete="off">
+                    </div>
+
+                    <div class="input-group form-input-group">
+                        <input type="text" placeholder="رمز عبور" data-type="password" class="form-input passwordInput"
+                               autocomplete="off">
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn submit-form-btn">ورود</button>
+                    <!-- GO REGISTER LINK-->
+                    <a href="./register.html" class="d-block mt-3 divert-link">حساب کاربری ندارید؟</a>
+                    <!-- FORGOT PASSWORD LINK-->
+                    <a href="./forgot-password.html" class="d-block mt-3 forgot-pass-link">رمز عبور خود را فراموش کرده اید؟</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="./js/login.js"></script>
+</body>
+</html>

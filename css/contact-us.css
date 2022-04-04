@@ -1,0 +1,40 @@
+.contact-us-container {
+    margin: 4rem auto 3rem auto;
+}
+
+.contact-us-container .contact-us-image {
+    width: 100%;
+
+}
+
+.contact-us-info .inner-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.contact-us-container .inner-info .info-title {
+    color: var(--gray-900);
+    margin-left: .3rem;
+    margin-bottom: .2rem !important;
+}
+
+/* social icons */
+.contact-us-container .inner-info .social-wrapper {
+    margin-top: 1rem;
+    text-align: center;
+}
+.contact-us-container .inner-info .social-title{
+    color: var(--primary-color);
+}
+
+.contact-us-container .inner-info .social-row{
+justify-content: center;
+}
+.contact-us-container .inner-info .social-wrapper .social-image-wrapper{
+    display: block;
+    width: 50px;
+}
